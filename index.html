@@ -1,1 +1,104 @@
-<!DOCTYPE html><html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pré-Consulta — Fernanda Bessa Dermatologia</title><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Raleway:wght@300;400;500;600&display=swap" rel="stylesheet"><style>*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}:root{--bg:#f0eeec;--surface:#ffffff;--gray-100:#f5f4f2;--gray-200:#e8e6e3;--gray-300:#d0cdc9;--gray-400:#b0acaa;--gray-500:#8a8580;--gray-700:#5a5652;--gray-900:#2e2c2a}html{scroll-behavior:smooth}body{background:var(--bg);font-family:'Raleway',sans-serif;font-weight:300;color:var(--gray-700);min-height:100vh;padding:60px 20px 100px}header{text-align:center;margin-bottom:56px}.brand-name{font-family:'Cormorant Garamond',serif;font-size:clamp(22px,4vw,30px);font-weight:300;letter-spacing:.25em;color:var(--gray-900);text-transform:uppercase}.brand-sub{font-size:10px;letter-spacing:.38em;text-transform:uppercase;color:var(--gray-400);margin-top:6px}.form-card{max-width:780px;margin:0 auto;background:var(--surface);border:1px solid var(--gray-200);padding:52px clamp(24px,5vw,64px)}.section-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:400;letter-spacing:.12em;color:var(--gray-900);text-transform:uppercase;padding-bottom:10px;border-bottom:1px solid var(--gray-200);margin-bottom:28px;margin-top:44px;display:flex;align-items:center;gap:12px}.section-num{font-size:11px;letter-spacing:.2em;color:var(--gray-400);font-family:'Raleway',sans-serif;font-weight:400}.grid-2{display:grid;grid-template-columns:1fr 1fr;gap:20px 28px}.col-span{grid-column:1/-1}@media(max-width:580px){.grid-2{grid-template-columns:1fr}.col-span{grid-column:1}}.field{display:flex;flex-direction:column;gap:7px}label{font-size:10px;letter-spacing:.28em;text-transform:uppercase;color:var(--gray-500);font-weight:500}input[type=text],input[type=email],input[type=tel],input[type=date],select,textarea{background:var(--gray-100);border:1px solid transparent;border-bottom-color:var(--gray-300);padding:11px 14px;font-family:'Raleway',sans-serif;font-size:13px;font-weight:300;color:var(--gray-900);outline:none;transition:border-color .25s,background .25s;width:100%;-webkit-appearance:none;appearance:none}input:focus,select:focus,textarea:focus{border-color:var(--gray-400);background:#fff}​​​​​​​​​​​​​​​​
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pré-Consulta — Fernanda Bessa Dermatologia</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400&family=Raleway:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#f0eeec;font-family:'Raleway',sans-serif;font-weight:300;color:#5a5652;padding:40px 20px 80px}
+header{text-align:center;margin-bottom:40px}
+.brand{font-family:'Cormorant Garamond',serif;font-size:28px;letter-spacing:.25em;color:#2e2c2a;text-transform:uppercase}
+.sub{font-size:10px;letter-spacing:.38em;text-transform:uppercase;color:#b0acaa;margin-top:6px}
+.card{max-width:700px;margin:0 auto;background:#fff;border:1px solid #e8e6e3;padding:40px}
+.sec{font-family:'Cormorant Garamond',serif;font-size:16px;letter-spacing:.12em;color:#2e2c2a;text-transform:uppercase;border-bottom:1px solid #e8e6e3;padding-bottom:8px;margin:36px 0 20px;display:flex;gap:10px}
+.num{font-size:10px;color:#b0acaa;font-family:'Raleway',sans-serif}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+label{font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:#8a8580;font-weight:500}
+input,select,textarea{background:#f5f4f2;border:none;border-bottom:1px solid #d0cdc9;padding:10px 12px;font-family:'Raleway',sans-serif;font-size:13px;color:#2e2c2a;width:100%;outline:none}
+textarea{min-height:80px;resize:vertical}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.opts{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.opt{display:flex;align-items:center;gap:6px;font-size:12px;padding:7px 12px;border:1px solid #e8e6e3;background:#f5f4f2;cursor:pointer}
+.opt input{width:13px;height:13px;accent-color:#5a5652;flex-shrink:0}
+.btn{display:block;margin:40px auto 0;background:#2e2c2a;color:#fff;border:none;padding:14px 48px;font-family:'Raleway',sans-serif;font-size:11px;letter-spacing:.3em;text-transform:uppercase;cursor:pointer}
+.ok{display:none;text-align:center;padding:40px}
+.ok.show{display:block}
+.ok h2{font-family:'Cormorant Garamond',serif;font-size:22px;color:#2e2c2a;margin-bottom:8px}
+.ok p{font-size:11px;letter-spacing:.1em;color:#b0acaa}
+@media(max-width:500px){.row{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header><div class="brand">Fernanda Bessa</div><div class="sub">Dermatologia</div></header>
+<div class="card">
+<div id="ok" class="ok"><h2>Formulário enviado</h2><p>Suas informações foram recebidas.<br>Até breve na consulta.</p></div>
+<form id="f" action="https://formspree.io/f/meevppye" method="POST">
+<div class="sec"><span class="num">01</span>Identificação</div>
+<div class="field"><label>Nome completo *</label><input name="nome" required></div>
+<div class="row">
+<div class="field"><label>CPF</label><input name="cpf" placeholder="000.000.000-00"></div>
+<div class="field"><label>Data de nascimento</label><input type="date" name="nascimento"></div>
+<div class="field"><label>Sexo biológico</label><select name="sexo"><option value="">Selecione</option><option>Feminino</option><option>Masculino</option></select></div>
+<div class="field"><label>Telefone / WhatsApp</label><input name="telefone"></div>
+</div>
+<div class="field"><label>E-mail</label><input type="email" name="email"></div>
+<div class="sec"><span class="num">02</span>Motivo da Consulta</div>
+<div class="field"><label>Principal motivo</label><textarea name="motivo"></textarea></div>
+<div class="field"><label>Há quanto tempo?</label><div class="opts"><label class="opt"><input type="radio" name="tempo"> Menos de 1 mês</label><label class="opt"><input type="radio" name="tempo"> 1–6 meses</label><label class="opt"><input type="radio" name="tempo"> 6–12 meses</label><label class="opt"><input type="radio" name="tempo"> Mais de 1 ano</label><label class="opt"><input type="radio" name="tempo"> Toda a vida</label></div></div>
+<div class="sec"><span class="num">03</span>Histórico de Saúde</div>
+<div class="field"><label>Doenças diagnosticadas</label><div class="opts"><label class="opt"><input type="checkbox" name="doenca"> Hipertensão</label><label class="opt"><input type="checkbox" name="doenca"> Diabetes</label><label class="opt"><input type="checkbox" name="doenca"> Tireoide</label><label class="opt"><input type="checkbox" name="doenca"> Autoimune</label><label class="opt"><input type="checkbox" name="doenca"> Alergia</label><label class="opt"><input type="checkbox" name="doenca"> Nenhuma</label></div></div>
+<div class="row">
+<div class="field"><label>Alergia a ovo?</label><div class="opts"><label class="opt"><input type="radio" name="ovo"> Não</label><label class="opt"><input type="radio" name="ovo"> Sim</label></div></div>
+<div class="field"><label>Alergia a picada de abelha?</label><div class="opts"><label class="opt"><input type="radio" name="abelha"> Não</label><label class="opt"><input type="radio" name="abelha"> Sim</label></div></div>
+<div class="field"><label>Doença infectocontagiosa?</label><div class="opts"><label class="opt"><input type="radio" name="infecto"> Não</label><label class="opt"><input type="radio" name="infecto"> Sim</label></div></div>
+<div class="field"><label>Qual?</label><input name="infecto_qual"></div>
+<div class="field"><label>Medicação regular?</label><div class="opts"><label class="opt"><input type="radio" name="med"> Não</label><label class="opt"><input type="radio" name="med"> Sim</label></div></div>
+<div class="field"><label>Quais medicamentos?</label><input name="meds"></div>
+<div class="field"><label>Roacutan?</label><div class="opts"><label class="opt"><input type="radio" name="roacutan"> Não</label><label class="opt"><input type="radio" name="roacutan"> Sim, em uso</label><label class="opt"><input type="radio" name="roacutan"> Já usei</label></div></div>
+<div class="field"><label>Peso no último mês?</label><div class="opts"><label class="opt"><input type="radio" name="peso"> Não alterou</label><label class="opt"><input type="radio" name="peso"> Perdeu</label><label class="opt"><input type="radio" name="peso"> Ganhou</label></div></div>
+<div class="field"><label>Trauma físico?</label><div class="opts"><label class="opt"><input type="radio" name="trauma"> Não</label><label class="opt"><input type="radio" name="trauma"> Sim</label></div></div>
+<div class="field"><label>Cirurgia prévia?</label><div class="opts"><label class="opt"><input type="radio" name="cirurgia"> Não</label><label class="opt"><input type="radio" name="cirurgia"> Sim</label></div></div>
+<div class="field"><label>Hematomas / varizes?</label><div class="opts"><label class="opt"><input type="radio" name="varizes"> Não</label><label class="opt"><input type="radio" name="varizes"> Hematomas</label><label class="opt"><input type="radio" name="varizes"> Varizes</label><label class="opt"><input type="radio" name="varizes"> Ambos</label></div></div>
+<div class="field"><label>Formação sólida na pele?</label><div class="opts"><label class="opt"><input type="radio" name="nodulo"> Não</label><label class="opt"><input type="radio" name="nodulo"> Sim</label></div></div>
+</div>
+<div class="field"><label>Queloide / cicatrização difícil?</label><div class="opts"><label class="opt"><input type="radio" name="queloide"> Não</label><label class="opt"><input type="radio" name="queloide"> Queloide</label><label class="opt"><input type="radio" name="queloide"> Cicatrização lenta</label><label class="opt"><input type="radio" name="queloide"> Ambos</label></div></div>
+<div class="field"><label>Alergia a medicamento ou substância?</label><input name="alergia"></div>
+<div class="sec"><span class="num">03b</span>Saúde Feminina</div>
+<div class="row">
+<div class="field"><label>Gestante?</label><div class="opts"><label class="opt"><input type="radio" name="gestante"> Não</label><label class="opt"><input type="radio" name="gestante"> Sim</label><label class="opt"><input type="radio" name="gestante"> N/A</label></div></div>
+<div class="field"><label>Ciclo regular?</label><div class="opts"><label class="opt"><input type="radio" name="ciclo"> Sim</label><label class="opt"><input type="radio" name="ciclo"> Irregular</label><label class="opt"><input type="radio" name="ciclo"> N/A</label></div></div>
+</div>
+<div class="field"><label>Anticoncepcional?</label><div class="opts"><label class="opt"><input type="radio" name="anti"> Não</label><label class="opt"><input type="radio" name="anti"> Pílula</label><label class="opt"><input type="radio" name="anti"> DIU</label><label class="opt"><input type="radio" name="anti"> Implante</label><label class="opt"><input type="radio" name="anti"> Injetável</label><label class="opt"><input type="radio" name="anti"> Outro</label></div></div>
+<div class="sec"><span class="num">04</span>Rotina e Pele</div>
+<div class="field"><label>Tipo de pele</label><div class="opts"><label class="opt"><input type="radio" name="pele"> Seca</label><label class="opt"><input type="radio" name="pele"> Normal</label><label class="opt"><input type="radio" name="pele"> Mista</label><label class="opt"><input type="radio" name="pele"> Oleosa</label><label class="opt"><input type="radio" name="pele"> Não sei</label></div></div>
+<div class="field"><label>Protetor solar?</label><div class="opts"><label class="opt"><input type="radio" name="solar"> Sempre</label><label class="opt"><input type="radio" name="solar"> Às vezes</label><label class="opt"><input type="radio" name="solar"> Raramente</label><label class="opt"><input type="radio" name="solar"> Não uso</label></div></div>
+<div class="field"><label>Skincare atual</label><textarea name="skincare"></textarea></div>
+<div class="field"><label>Procedimentos realizados</label><div class="opts"><label class="opt"><input type="checkbox" name="proc"> Peeling</label><label class="opt"><input type="checkbox" name="proc"> Toxina botulínica</label><label class="opt"><input type="checkbox" name="proc"> Preenchimento</label><label class="opt"><input type="checkbox" name="proc"> Laser</label><label class="opt"><input type="checkbox" name="proc"> Microagulhamento</label><label class="opt"><input type="checkbox" name="proc"> Bioestimulador de colágeno</label><label class="opt"><input type="checkbox" name="proc"> Nunca realizei</label></div></div>
+<div class="sec"><span class="num">05</span>Estilo de Vida</div>
+<div class="row">
+<div class="field"><label>Atividade física?</label><div class="opts"><label class="opt"><input type="radio" name="ativ"> Não</label><label class="opt"><input type="radio" name="ativ"> Sim</label></div></div>
+<div class="field"><label>Frequência</label><select name="freq"><option value="">Selecione</option><option>1× por semana</option><option>2–3× por semana</option><option>4–5× por semana</option><option>Diária</option></select></div>
+<div class="field"><label>Qualidade do sono</label><select name="sono"><option value="">Selecione</option><option>Muito bem</option><option>Razoável</option><option>Mal com frequência</option><option>Insônia</option></select></div>
+<div class="field"><label>Nível de estresse</label><select name="estresse"><option value="">Selecione</option><option>Baixo</option><option>Moderado</option><option>Alto</option><option>Muito alto</option></select></div>
+<div class="field"><label>Fuma?</label><div class="opts"><label class="opt"><input type="radio" name="fuma"> Não</label><label class="opt"><input type="radio" name="fuma"> Ex-fumante</label><label class="opt"><input type="radio" name="fuma"> Sim</label></div></div>
+<div class="field"><label>Álcool?</label><div class="opts"><label class="opt"><input type="radio" name="alcool"> Não</label><label class="opt"><input type="radio" name="alcool"> Ocasionalmente</label><label class="opt"><input type="radio" name="alcool"> Frequentemente</label></div></div>
+</div>
+<div class="sec"><span class="num">06</span>Expectativas</div>
+<div class="field"><label>O que espera alcançar?</label><textarea name="expectativas"></textarea></div>
+<div class="field"><label>Observações adicionais</label><textarea name="obs"></textarea></div>
+<button class="btn" type="submit">Enviar formulário</button>
+</form>
+</div>
+<script>
+document.getElementById('f').addEventListener('submit',async function(e){
+e.preventDefault();
+const data=new FormData(this);
+const r=await fetch(this.action,{method:'POST',body:data,headers:{'Accept':'application/json'}});
+if(r.ok){this.style.display='none';document.getElementById('ok').classList.add('show');window.scrollTo({top:0,behavior:'smooth'});}
+else{alert('Erro ao enviar. Tente novamente.');}
+});
+</script>
+</body>
+</html>
